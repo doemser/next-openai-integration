@@ -39,7 +39,7 @@ export default function Home() {
         <input type="text" id="persona" name="persona" />
         <hr />
         <label htmlFor="message">Question:</label>
-        <input type="text" id="message" name="message" />
+        <textarea id="message" name="message" />
         <button>submit</button>
       </form>
 
