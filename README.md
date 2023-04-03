@@ -2,7 +2,7 @@
 
 This repository provides an isolated entrypoint into the world of fetching results from OpenAI's API. It's designed for simplicity and ease of use, perfect for beginners who want to start exploring the powerful capabilities of OpenAI's GPT engines.
 
-Dive into the code and documentation to start generating creative text outputs with ease.
+The app allows users to input a persona and a question, and uses OpenAI's API to generate a response to the question from the perspective of the specified persona. The app is built using React and the generated response is displayed in real-time on the webpage.
 
 ## Getting Started
 
