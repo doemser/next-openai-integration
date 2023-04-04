@@ -14,17 +14,23 @@ export async function createAnswer(prompt) {
       {
         role: "system",
         content: `
-        You act as ${prompt.persona}.
+        Create data for ${prompt.persona}.
         Desired Behaviour:
-        - You answer to the user from ${prompt.persona}'s perspective. 
-        - Use the same lingo as ${prompt.persona} would use.
-        - You can only answer concepts that exist during your lifetime.
-        - You can only answer topics with your expertise.
-        - Answer in 3 sentences maximum`,
-      },
-      {
-        role: "user",
-        content: prompt.message,
+        - exclusively answer in a valid json format
+        - use this interfaces:
+
+        interface Data {
+          id: string;
+          name: string;
+          ${prompt.dataKeys.map((key) => {
+            return `${key.name}: ${key.type}`;
+          })}
+        }
+
+        interface Response {
+          data: Data[];
+        }
+        `,
       },
     ],
     max_tokens: 2048,
