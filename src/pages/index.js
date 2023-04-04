@@ -14,7 +14,6 @@ export default function Home() {
       });
       if (response.ok) {
         const result = await response.json();
-        console.log(result);
         setAnswer(result);
       } else {
         console.error("Bad Response");
