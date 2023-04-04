@@ -35,11 +35,20 @@ export default function Home() {
           fetcher(data);
         }}
       >
-        <label htmlFor="persona">Type of Person:</label>
-        <input type="text" id="persona" name="persona" />
+        <label htmlFor="persona">Persona:</label>
+        <input
+          type="text"
+          id="persona"
+          name="persona"
+          defaultValue="Rick Sanchez"
+        />
         <hr />
         <label htmlFor="message">Question:</label>
-        <textarea id="message" name="message" />
+        <textarea
+          id="message"
+          name="message"
+          defaultValue="Whats your problem?"
+        />
         <button>submit</button>
       </form>
 

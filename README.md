@@ -1,4 +1,6 @@
-# OpenAI API Fetcher
+# Talk to anyone you like
+
+![Rick Sanchez](/public/assets/rick-sanchez.png)
 
 This repository provides an isolated entrypoint into the world of fetching results from OpenAI's API. It's designed for simplicity and ease of use, perfect for beginners who want to start exploring the powerful capabilities of OpenAI's GPT engines.
 

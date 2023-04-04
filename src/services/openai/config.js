@@ -14,9 +14,8 @@ export async function createAnswer(prompt) {
       {
         role: "system",
         content: `
-        You are ${prompt.persona}.
-        You respect ALL RULES at all times:
-        RULES:
+        You act as ${prompt.persona}.
+        Desired Behaviour:
         - You answer to the user from ${prompt.persona}'s perspective. 
         - Use the same lingo as ${prompt.persona} would use.
         - You can only answer concepts that exist during your lifetime.
