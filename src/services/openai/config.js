@@ -40,7 +40,7 @@ export async function createAnswer(prompt) {
   const response = await openai.createCompletion({
     model: "text-davinci-003",
     temperature: 1,
-    prompt: prompt.message,
+    prompt: ` You are ${prompt.persona} react to: ${prompt.message)`,
     max_tokens: 250,
   });
 

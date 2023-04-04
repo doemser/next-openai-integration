@@ -52,7 +52,7 @@ export default function Home() {
         />
         <button>submit</button>
       </form>
-      {/* Change to answer.answer, if you use free API Key */}
+      {/* Change to answer?.answer, if you use free API Key */}
       {loading ? <p>loading..</p> : <p>{answer?.answer.content}</p>}
     </>
   );
