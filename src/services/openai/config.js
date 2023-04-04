@@ -32,18 +32,3 @@ export async function createAnswer(prompt) {
 
   return response.data.choices[0].message;
 }
-
-// Comment in and use for free API Key.
-
-/* 
-export async function createAnswer(prompt) {
-  const response = await openai.createCompletion({
-    model: "text-davinci-003",
-    temperature: 1,
-    prompt: ` You are ${prompt.persona} react to: ${prompt.message)`,
-    max_tokens: 250,
-  });
-
-  return response.data.choices[0].text;
-}
-*/
