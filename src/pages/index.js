@@ -14,6 +14,7 @@ export default function Home() {
       });
       if (response.ok) {
         const result = await response.json();
+        console.log(result);
         setAnswer(result);
       } else {
         console.error("Bad Response");
@@ -51,7 +52,7 @@ export default function Home() {
         />
         <button>submit</button>
       </form>
-
+      {/* Change to answer.answer, if you use free API Key */}
       {loading ? <p>loading..</p> : <p>{answer?.answer.content}</p>}
     </>
   );

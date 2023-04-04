@@ -22,7 +22,10 @@ Open the `.env` file and add your OpenAI API key:
 
 ```shell
 OPENAI_API_KEY=your_api_key_here
+
 ```
+
+> If you have a free API Key you need to take the commented changes in config.js and index.js, else you are already ready to go.
 
 ### Run the development server:
 
