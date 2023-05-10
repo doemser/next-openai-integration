@@ -25,7 +25,7 @@ OPENAI_API_KEY=your_api_key_here
 
 ```
 
-> If you have a free API Key you need to take the commented changes in config.js and index.js, else you are already ready to go.
+> If you do not have a paid openai api key, you will need to adjust the model to use something lower than gpt3.5-turbo.
 
 ### Run the development server:
 
